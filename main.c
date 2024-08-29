@@ -44,7 +44,7 @@ int main()
 
     result = firstNum - secondNum;
 
-    printf("Sonuc:%d\n\n",result);
+    printf("Sonuc:%d\n\n", result);
 
     return 0;
 
