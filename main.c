@@ -56,7 +56,7 @@ int main()
     scanf("%d", &mynumber2);
     printf("\n");
 
-    printf("ikinci sayiyi girin");
+    printf("ikinci sayiyi girin:");
     scanf("%d", &mynumber3);
     printf("\n");
 
@@ -66,7 +66,7 @@ int main()
 
     return 0;
     }
-    else if(mynumber = 4) {
+    else if(mynumber == 4) {
 
     printf("birinci sayiyi girin:");
     scanf("%d", &mynumber2);
@@ -85,7 +85,7 @@ int main()
 
     else if(mynumber > 4);{
 
-      printf("Tebrikler");
+      printf("Tebrikler\n\n");
       return 0;
     }
 
