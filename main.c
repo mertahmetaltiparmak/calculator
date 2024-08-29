@@ -3,8 +3,8 @@
 
 int main()
 {
-    int mynumber, mynumber2, mynumber3;
-    int sonuc;
+    int option, firstNum, secondNum;
+    int result;
 
     printf("1 - Toplama \n");
     printf("2 - Cikarma\n");
@@ -12,78 +12,79 @@ int main()
     printf("4 - Bolme\n");
 
     printf("Yapicaginiz islemi secin:");
-    scanf("%d", &mynumber);
+    scanf("%d", &option);
     printf("\n");
 
-    if(mynumber == 1){;
+    if(option == 1){;
 
     printf("birinci sayiyi girin:");
-    scanf("%d", &mynumber2);
+    scanf("%d", &firstNum);
     printf("\n");
 
     printf("ikinci sayiyi girin:");
-    scanf("%d", &mynumber3);
+    scanf("%d", &secondNum);
     printf("\n");
 
-    sonuc = mynumber2 + mynumber3;
+    result = firstNum + secondNum;
 
-    printf("Sonuc:%d\n\n", sonuc);
+    printf("Sonuc:%d\n\n", result);
 
     return 0;
     }
 
-    else if(mynumber == 2){
+    else if(option == 2){
 
     printf("birinci sayiyi girin:");
-    scanf("%d", &mynumber2);
+    scanf("%d", &firstNum);
     printf("\n");
 
     printf("ikinci sayiyi girin:");
-    scanf("%d", &mynumber3);
+    scanf("%d", &secondNum);
     printf("\n");
 
-    sonuc = mynumber2 - mynumber3;
+    result = firstNum - secondNum;
 
-    printf("Sonuc:%d\n\n",sonuc);
-
-    return 0;
-
-    }
-
-    else if(mynumber == 3){
-
-    printf("birinci sayiyi girin:");
-    scanf("%d", &mynumber2);
-    printf("\n");
-
-    printf("ikinci sayiyi girin:");
-    scanf("%d", &mynumber3);
-    printf("\n");
-
-    sonuc = mynumber2 * mynumber3;
-
-    printf("Sonuc:%d \n\n", sonuc);
-
-    return 0;
-    }
-    else if(mynumber == 4) {
-
-    printf("birinci sayiyi girin:");
-    scanf("%d", &mynumber2);
-    printf("\n");
-
-    printf("ikinci sayiyi girin:");
-    scanf("%d", &mynumber3);
-
-    sonuc = mynumber2 / mynumber3;
-
-    printf("Sonuc:%d\n\n", sonuc);
+    printf("Sonuc:%d\n\n",result);
 
     return 0;
 
     }
 
-    else if(mynumber > 4);{
+    else if(option == 3){
+
+    printf("birinci sayiyi girin:");
+    scanf("%d", &firstNum);
+    printf("\n");
+
+    printf("ikinci sayiyi girin:");
+    scanf("%d", &secondNum);
+    printf("\n");
+
+    result = firstNum * secondNum;
+
+    printf("Sonuc:%d \n\n", result);
+
+    return 0;
+    }
+
+    else if(option == 4) {
+
+    printf("birinci sayiyi girin:");
+    scanf("%d", &firstNum);
+    printf("\n");
+
+    printf("ikinci sayiyi girin:");
+    scanf("%d", &secondNum);
+
+    result = firstNum / secondNum;
+
+    printf("Sonuc:%d\n\n", result);
+
+    return 0;
+
+    }
+
+    else if(option > 4);{
 
       printf("Tebrikler\n\n");
       return 0;
